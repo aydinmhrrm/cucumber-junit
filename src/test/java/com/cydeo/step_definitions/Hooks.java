@@ -15,7 +15,7 @@ public class Hooks {
     public void setupScenario(){
         System.out.println("===Setting up browser using cucumber @Before");
     }
-    @Before
+    @Before("@login")
     public void setupScenarioForLogind(){
         System.out.println("===Setting up browser using cucumber @Before");
     }
