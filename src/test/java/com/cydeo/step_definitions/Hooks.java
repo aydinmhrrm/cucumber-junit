@@ -11,13 +11,17 @@ In the class we will be able to pass pre- & post- conditions to
  */
 public class Hooks {
     //IMPORT FROM IO.CUCUMBER.JAVA NOT FROM JUNIT
-    @Before
+    @Before(order=0)
     public void setupScenario(){
         System.out.println("===Setting up browser using cucumber @Before");
     }
-    @Before("@login")
-    public void setupScenarioForLogind(){
-        System.out.println("===Setting up browser using cucumber @Before");
+    @Before(value="@login", order=1)
+    public void setupScenarioForLogins(){
+        System.out.println("===this will only apply to scenarios with @login tag");
+    }
+    @Before(value="@db", order=-1)
+    public void setupForDatabaseScenarios(){
+        System.out.println("===this will only apply to scenarios with @db tag");
     }
     @After
     public void teardownScenario(){
