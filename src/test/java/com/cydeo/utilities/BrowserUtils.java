@@ -74,7 +74,7 @@ for given duration
     /**
      * This method will accept a dropdown as a WebElement and return all the options' text in a List of String.
      * @param dropdownElement
-     * @return
+     * @return List<String> actualOptionsAsString
      */
 
 
