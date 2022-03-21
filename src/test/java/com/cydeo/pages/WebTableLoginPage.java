@@ -53,6 +53,6 @@ public class WebTableLoginPage {
     public void loginWithConfig(){
         inputUsername.sendKeys(ConfigurationReader.getProperty("web.table.username"));
         inputPassword.sendKeys(ConfigurationReader.getProperty("web.table.pw"));
+        loginButton.click();
     }
-
 }
