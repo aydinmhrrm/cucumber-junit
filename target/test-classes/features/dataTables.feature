@@ -26,3 +26,4 @@ Feature: Examples of cucumber data table implementations
       | September |
       | October   |
       | November  |
+      | December  |
