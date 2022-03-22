@@ -1,2 +1,1 @@
-file:src/test/resources/features/webTableOrder.feature:37:39
-file:src/test/resources/features/wikiSearch.feature:27
+file:src/test/resources/features/googleSearch.feature:10
