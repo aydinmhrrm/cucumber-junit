@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginStepDefinitions {
+
     @When("user enters librarian username")
     public void user_enters_librarian_username() {
         System.out.println("user enters librarian username");
@@ -19,12 +20,11 @@ public class LoginStepDefinitions {
     @Then("user should see the dashboard")
     public void user_should_see_the_dashboard() {
         System.out.println("user should see the dashboard");
-
     }
 
-    @When("user enters student username")
+   @When("user enters student username")
     public void userEntersStudentUsername() {
-        System.out.println("user enters student username");
+       System.out.println("user enters student username");
     }
 
     @And("user enters student password")
